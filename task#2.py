@@ -24,8 +24,9 @@ if __name__ == "__main__":
     
     turtle.speed(0)
     turtle.penup()
-    turtle.goto(-length/2, length/3)
+    turtle.goto(-length / 2, length / 3)
     turtle.pendown()
     draw_snowflake(length, level)
     turtle.hideturtle()
     turtle.done()
+

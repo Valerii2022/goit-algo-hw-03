@@ -13,7 +13,7 @@ def sort_files_by_extension(src_dir, dest_dir):
                 new_dest_dir = os.path.join(dest_dir, item)
                 sort_files_by_extension(src_path, new_dest_dir)
             else:
-                file_ext = os.path.splitext(item)[1][1:]  # отримати розширення файлу
+                file_ext = os.path.splitext(item)[1][1:]  
                 new_dest_dir = os.path.join(dest_dir, file_ext)
                 if not os.path.exists(new_dest_dir):
                     os.makedirs(new_dest_dir)
@@ -28,3 +28,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     sort_files_by_extension(args.src_dir, args.dest_dir)
+
+
